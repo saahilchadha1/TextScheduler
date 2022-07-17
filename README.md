@@ -22,11 +22,6 @@ I'm terrible at keeping in touch with my friends. Even though I love them, month
     ]
 }
 
-400 
-{
-    "error": "No messages found"
-}
-
 500
 {
     "error": "Internal server error"
