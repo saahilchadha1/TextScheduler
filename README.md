@@ -41,7 +41,10 @@ I'm terrible at keeping in touch with my friends. Even though I love them, month
 - `id (Sort Key): String` - `<scheduled_for: Date>#<uuid>` Unique ID that can be used to efficiently query for a single date's scheduled messages
 - `scheduled_for: Date` - date that the message is scheduled to be sent
 - `created_at: UTC Timestamp` - timestamp when the message was created
-- `rate_expression: String` - defines the rate at which the message should be scheduled; formatted as `<value> <unit>` where `<unit>` can be `day|days|week|weeks|year|years` e.g. `1 year`. `0 <unit>` means it should not be requeued
+- `rate_expression: String` - defines the rate at which the message should be scheduled
+    - formatted as `<value> <unit>` where `<unit>` can be `day|days|week|weeks|year|years`
+    - e.g. `1 year`
+    - `0 <any unit>` means the message should not be requeued
 - `contact_first_name: String` - the receiving contact's first name
 - `contact_last_name: String` - the receiving contact's last name
 - `contact_phone_no: String` - the receiving contact's phone number with country code 
