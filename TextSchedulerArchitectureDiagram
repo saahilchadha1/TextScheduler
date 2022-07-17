@@ -1,1 +1,102 @@
-<mxfile host="app.diagrams.net" modified="2022-07-17T22:47:58.310Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" version="20.1.1" etag="TfHb9nRICxYygP92ZpS8" type="github"><diagram id="Cc64nWN8OIKv2w20fgZO">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-07-17T22:54:01.315Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="E0i-JAPthwrU8HpsejVz" version="20.1.1" type="github">
+  <diagram id="Cc64nWN8OIKv2w20fgZO" name="Page-1">
+    <mxGraphModel dx="875" dy="456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_xpnmp_AiFgLKEA1aix-22" target="e_xpnmp_AiFgLKEA1aix-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="694.047619047619" y="212" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-2" value="Put/Delete" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_xpnmp_AiFgLKEA1aix-1">
+          <mxGeometry x="-0.224" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="260" as="sourcePoint" />
+            <mxPoint x="210" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="e_xpnmp_AiFgLKEA1aix-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="195" as="sourcePoint" />
+            <mxPoint x="210" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-37" value="iMessage/SMS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_xpnmp_AiFgLKEA1aix-6">
+          <mxGeometry x="0.2879" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="e_xpnmp_AiFgLKEA1aix-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="172.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-8" value="/api/get_content" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_xpnmp_AiFgLKEA1aix-7">
+          <mxGeometry x="-0.1818" relative="1" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="e_xpnmp_AiFgLKEA1aix-13" target="e_xpnmp_AiFgLKEA1aix-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-13" value="TextSchedulerAPI&lt;br&gt;API Gateway" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="375" y="126" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_xpnmp_AiFgLKEA1aix-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="172.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-15" value="Read" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_xpnmp_AiFgLKEA1aix-14">
+          <mxGeometry x="-0.0606" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-16" value="GetMessages&lt;br&gt;Lambda" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="137" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="e_xpnmp_AiFgLKEA1aix-22" target="e_xpnmp_AiFgLKEA1aix-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="555" y="429" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-22" value="RotateMessages Lambda" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="520" y="287.5" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="e_xpnmp_AiFgLKEA1aix-24" target="e_xpnmp_AiFgLKEA1aix-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-24" value="Daily CloudWatch Job" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cloudwatch;fillColor=#759C3E;gradientColor=none;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="360" y="277" width="82.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-26" value="Slack API" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="494.5" y="429" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-28" value="TextSchedulerMessages&lt;br&gt;Table" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.dynamo_db;fillColor=#2E73B8;gradientColor=none;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="670" y="126" width="72" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="e_xpnmp_AiFgLKEA1aix-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="172" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-32" value="Daily Job" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/SchedulerJobCollection.svg;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="70" y="150.5" width="50" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-35" value="iPhone Shortcuts App" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://images.macrumors.com/t/eZvRrgIGjNbxWTp75DpFPtI9KQw=/1600x/article-new/2020/07/shortcuts-icon.jpg;" vertex="1" parent="1">
+          <mxGeometry x="182.11" y="142.75" width="58.27" height="58.5" as="geometry" />
+        </mxCell>
+        <mxCell id="e_xpnmp_AiFgLKEA1aix-36" value="Messages app" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/5/51/IMessage_logo.svg;" vertex="1" parent="1">
+          <mxGeometry x="178.38" y="307" width="63" height="63" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
