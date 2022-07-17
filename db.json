@@ -1,8 +1,18 @@
 {
     "get_messages": {
-        "contact_first_name": "John",
-        "contact_last_name": "Doe",
-        "contact_phone_no": "12345678900",
-        "message": "What's up dude?"
+        "messages": [
+            {
+                "contact_first_name": "John",
+                "contact_last_name": "Doe",
+                "contact_phone_no": "+1234",
+                "message": "What's up dude?"
+            },
+            {
+                "contact_first_name": "Jane",
+                "contact_last_name": "Doe",
+                "contact_phone_no": "+9876",
+                "message": "What's up dudette?"
+            }
+        ]
     }
 }
