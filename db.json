@@ -4,13 +4,13 @@
             {
                 "contact_first_name": "John",
                 "contact_last_name": "Doe",
-                "contact_phone_no": "+1234",
+                "contact_phone_no": "1234",
                 "message": "What's up dude?"
             },
             {
                 "contact_first_name": "Jane",
                 "contact_last_name": "Doe",
-                "contact_phone_no": "+9876",
+                "contact_phone_no": "9876",
                 "message": "What's up dudette?"
             }
         ]
