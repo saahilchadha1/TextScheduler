@@ -1,2 +1,6 @@
 __pycache__/
 venv/
+package/
+.DS_STORE
+*.zip
+secrets.json
