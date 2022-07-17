@@ -1,45 +1,55 @@
 # TextScheduler
-I'm terrible at keeping in touch with my friends. Even though I love them, months (or years) will go by without a text. This is my solution to force myself to keep in touch by automating texts to them. To keep it simple for now, the system will rotate through my contact list and send a message to each person once a week.  
+I'm terrible at keeping in touch with my friends. Even though I love them, months (or years) will go by without a text. This is my solution to force myself to keep in touch by automating texts to them.
 
-## How it works
-**Shortcut**
-1. Set up a Shortcut that runs every week on Sunday at 12pm EST 
-2. Shortcut hits /get_messages API 
-3. Sends the specified messages to the specified contact(s)
+## Shortcut
+1. Set up a Shortcut that runs every day at 12pm EST 
+2. Shortcut hits `/get_messages` API 
+3. Sends the specified messages to the specified contacts
 
-**API**
-1. Queries DynamoDB table for the oldest record created by `saahilc`
-2. Returns this record as JSON 
+## API
+1. Queries DynamoDB table for all messages where `scheduled_for` is today's date 
+2. Returns these records as JSON 
 ```
 200
-{
-    "contact_first_name": "John",
-    "contact_last_name": "Doe",
-    "contact_phone_no": "12345678900", # includes country code
-    "message": "What's up dude?"
+{ 
+    "messages": [
+        {
+            "contact_first_name": "John",
+            "contact_last_name": "Doe",
+            "contact_phone_no": "12345678900", # includes country code
+            "message": "What's up dude?"
+        }
+    ]
 }
 
 400 
 {
-    "errorMessage": "No file found"
+    "error": "No messages found"
 }
 
 500
 {
-    "errorMessage": "Internal server error"
+    "error": "Internal server error"
 }
 ```
 
-**Rotation Job**
-1. On Sunday at 11am EST, rotation job runs to delete the oldest record from the table, and replace it with an identical copy that is now the newest record in the table
+## Rotation Job
+1. Every day at 9am EST, rotation job runs
+2. Reads all the messages that were scheduled for yesterday, creates new records for each one based on the `rate_expression`
+3. Deletes the old records
+4. Sends a Slack notification detailing any errors. Or, states messages upcoming in the next 3 days.
 
-**DynamoDB Schema**
+## DynamoDB Schema
 - `created_by (Parition Key): String` - always `saahilc`
-- `created_at (Sort Key): Timestamp` - timestamp when this messages was queued
+- `id (Sort Key): String` - `<scheduled_for: Date>#<uuid>` Unique ID that can be used to efficiently query for a single date's scheduled messages
+- `scheduled_for: Date` - date that the message is scheduled to be sent
+- `created_at: UTC Timestamp` - timestamp when the message was created
+- `rate_expression: String` - defines the rate at which the message should be scheduled; formatted as `<value> <unit>` where `<unit>` can be `day|days|week|weeks|year|years` e.g. `1 year`. `0 <unit>` means it should not be requeued
 - `contact_first_name: String` - the receiving contact's first name
 - `contact_last_name: String` - the receiving contact's last name
 - `contact_phone_no: String` - the receiving contact's phone number with country code 
 - `message: String` - message to send
 
-**Frontend (Stretch Goal)** 
-I can see the upcoming messages, add a new message to the queue, or change the order of the existing messages in the queue.
+## Frontend (Stretch Goal)
+
+See the upcoming messages, add a new message to the queue, or change the order of the existing messages in the queue.
