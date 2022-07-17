@@ -4,7 +4,7 @@ I'm terrible at keeping in touch with my friends. Even though I love them, month
 ![Diagram](https://github.com/saahilchadha1/TextScheduler/blob/master/TextSchedulerArchitectureDiagram.drawio.png?raw=true)
 
 ## Shortcut
-1. Set up a Shortcut that runs every day at 12pm EST 
+1. Shortcut runs every day at 12pm EST 
 2. Shortcut hits `/get_messages` API 
 3. Sends the specified messages to the specified contacts
 
@@ -47,7 +47,7 @@ I'm terrible at keeping in touch with my friends. Even though I love them, month
     - `0 <any unit>` means the message should not be requeued
 - `contact_first_name: String` - the receiving contact's first name
 - `contact_last_name: String` - the receiving contact's last name
-- `contact_phone_no: String` - the receiving contact's phone number with country code 
+- `contact_phone_no: String` - the receiving contact's phone number 
 - `message: String` - message to send
 
 ## Frontend (Stretch Goal)
