@@ -15,7 +15,7 @@ I'm terrible at keeping in touch with my friends. Even though I love them, month
 {
     "contact_first_name": "John",
     "contact_last_name": "Doe",
-    "contact_phone_no": "12345678900" # includes country code
+    "contact_phone_no": "12345678900", # includes country code
     "message": "What's up dude?"
 }
 
@@ -34,7 +34,7 @@ I'm terrible at keeping in touch with my friends. Even though I love them, month
 1. On Sunday at 11am EST, rotation job runs to delete the oldest record from the table, and replace it with an identical copy that is now the newest record in the table
 
 **DynamoDB Schema**
-- `created_by (Primary Key): String` - always `saahilc`
+- `created_by (Parition Key): String` - always `saahilc`
 - `created_at (Sort Key): Timestamp` - timestamp when this messages was queued
 - `contact_first_name: String` - the receiving contact's first name
 - `contact_last_name: String` - the receiving contact's last name
