@@ -1,6 +1,8 @@
 # TextScheduler
 I'm terrible at keeping in touch with my friends. Even though I love them, months (or years) will go by without a text. This is my solution to force myself to keep in touch by automating texts to them.
 
+![Diagram](https://github.com/saahilchadha1/TextScheduler/blob/master/TextSchedulerArchitectureDiagram.drawio.png?raw=true)
+
 ## Shortcut
 1. Set up a Shortcut that runs every day at 12pm EST 
 2. Shortcut hits `/get_messages` API 
